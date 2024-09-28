@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       backgroundImage:{
         main: "linear-gradient(270.78deg, #c3dafe 4.19%, #e9d8fd 96.11%)"
+      },
+      width:{
+        w: "50"
       }
     },
   },
