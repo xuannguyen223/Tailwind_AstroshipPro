@@ -14,6 +14,45 @@ p {
 .container__astro {
   @apply max-w-screen-xl mx-auto px-5;
 }
+
+/* -------------------- HEADER ------------------------- */
+
+.header__logo span:nth-child(1) {
+  @apply font-bold text-indigo-600 text-lg;
+}
+
+.header__logo span:nth-child(2) {
+  @apply text-slate-600 text-lg;
+}
+
+.header__logo span:nth-child(3) {
+  @apply mt-1 ml-1 px-2 py-1 rounded-md
+  uppercase font-bold leading-none
+  text-xs bg-gray-200 text-slate-700;
+}
+
+li.header__button {
+  margin-left: 10px !important;
+}
+
+a.move i {
+  @apply relative align-baseline transition-all;
+}
+
+a.move:hover i {
+  @apply translate-x-1;
+}
+/* --------- Phần code svg ----------- */
+
+.popular__starups {
+  @apply mt-28 mb-5 text-center text-slate-500;
+}
+
+.popular__starups__flex {
+  @apply mt-5 flex flex-wrap items-center justify-center
+  gap-x-8 gap-y-4 md:gap-20 lg:gap-28;
+}
+
 /* ----------------------- CLIENT FEEDBACK ------------------------ */
 
 .feedback__title {
@@ -204,8 +243,8 @@ p {
 
 /* -------------------- FOOTER ------------------------- */
 
-.footer {
-  @apply py-14 bg-slate-100;
+footer {
+  @apply py-14 bg-slate-100 border-t border-slate-200;
 }
 
 .footer__main {
@@ -232,10 +271,10 @@ p {
   @apply text-slate-600 text-lg;
 }
 
-.footer__logo a p {
+.footer__logo a span:nth-child(3) {
   @apply mt-1 ml-1 px-2 py-1 rounded-md
   uppercase font-bold leading-none
-  text-xs bg-gray-200 text-slate-700 w-fit;
+  text-xs bg-gray-200 text-slate-700;
 }
 
 .footer__icon {
