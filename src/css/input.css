@@ -34,12 +34,12 @@
 
 .banner__text::before {
     content: "";
-    @apply absolute bg-indigo-200 w-1/2 h-1/2 blur-2xl rounded-full z-0 lg:bg-transparent
+    @apply absolute bg-indigo-200 w-full h-full blur-2xl rounded-full z-0 lg:bg-transparent
 }
 
 .banner__text::after {
     content: "";
-    @apply absolute w-52 h-52 z-0 bg-purple-200 blur-2xl rounded-full lg:bg-transparent
+    @apply absolute w-full h-full z-0 bg-purple-200 blur-2xl rounded-full lg:bg-transparent
 }
 
 .banner__button {
@@ -61,17 +61,27 @@
     @apply relative z-10
 }
 
-.banner__img::after {
+/* .banner__img::after {
     content: "";
-    @apply absolute w-96 h-96 -top-10 right-1/3 bg-indigo-100 bg-opacity-80 -translate-x-4 blur-2xl rounded-full z-0 md:bg-transparent
+    @apply absolute w-96 h-96 -top-10 right-1/3 bg-indigo-100 bg-opacity-80 -translate-x-4 blur-2xl rounded-full z-0 
 }
 
 .banner__img::before {
     content: "";
     @apply absolute w-96 h-96 right-1/3 translate-x-2/3 top-10 z-0
     bg-purple-100 bg-opacity-80 blur-2xl rounded-full -translate-y-14
+    
+} */
+/* KNOW */
+.know1{
+    @apply text-center text-base text-slate-500
 }
-
+.know__title{
+    @apply flex flex-wrap gap-x-6 gap-y-2 items-center justify-center md:gap-16 lg:gap-28  mt-24
+}
+.know__item{
+    @apply text-gray-500
+}
 /* TWO-COL FEATURES */
 /* Phần CSS chung của two-col features và more features */
 .features1{
@@ -116,6 +126,13 @@
 .features__button2{
     @apply mr-2
     hover:text-indigo-600 rounded-full px-4 py-1 transition
+}
+.features__content1{
+    margin-left: 20px;
+}
+.features__img img{
+    max-height: 100%; 
+    width: auto;
 }
 /* MORE FEATURES */
 .morefeatures__item{
