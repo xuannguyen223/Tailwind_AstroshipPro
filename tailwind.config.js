@@ -15,8 +15,17 @@ module.exports = {
       animation: {
         marquee: "marquee 50s linear infinite",
       },
+      backgroundImage: {
+        main: "linear-gradient(270.78deg, #c3dafe 4.19%, #e9d8fd 96.11%)",
+      },
+      width: {
+        w: "50",
+      },
       height: {
         86: "350px",
+      },
+      translate: {
+        700: "700px",
       },
     },
   },
