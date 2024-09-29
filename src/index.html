@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./img/logoAstroship.png" />
+    <title>Astroship Pro Hoang Xuan</title>
 
-    <title>Astroship-pro</title>
-    <!-- FONT AWNSOME -->
+    <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -13,131 +14,211 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <!-- Animate -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <!-- CSS -->
-    <link rel="stylesheet" href="../src/css/output.css" />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- MY CSS  -->
+    <link rel="stylesheet" href="./css/output.css" />
   </head>
   <body>
-    <!-- HEADER
-    <header class="header py-5">
-      <div class="max-w-screen-xl mx-auto px-5">
+    <!-- HEADER  -->
+    <header>
+      <nav
+        class="bg-white/80 backdrop-blur-lg fixed w-full z-50 border-gray-200 dark:bg-gray-900 dark:border-gray-700"
+      >
         <div
-          class="flex flex-col lg:flex-row justify-between items-center relative z-10"
+          class="max-w-screen-xl flex flex-wrap justify-between items-center mx-auto px-4 py-3"
         >
-          <div class="flex justify-between items-center w-full">
-            <div>
-              <a href="/" class="flex text-lg items-center">
-                <span class="font-bold text-indigo-600">Astro</span>
-                <span class="text-slate-600">ship</span>
-                <span
-                  class="uppercase text-gray-600 font-bold leading-none mt-0.5 ml-1 px-2 py-[4px] rounded-md bg-gray-200 text-[10px]"
-                  >Pro</span
-                >
-              </a>
-            </div>
-            lg: hidden nghĩa là ẩn phần tử khi kích thước màn hình lớn, còn đối với màn hình nhỏ hơn chỉ cần thêm hidden  -->
-            <!-- <div class="block lg:hidden">
-              <button aria-label="menu">
-                <svg
-                  fill="currentColor"
-                  class="w-4 h-4 text-gray-800"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  xmlns="https://www.w3.org/2000/svg"
-                >
-                  <title>Menu</title>
-                  <path
-                    class="astronav-close-icon astronav-toggle hidden"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M18.278 16.864a1 1 0 01-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 01-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 011.414-1.414l4.829 4.828 4.828-4.828a1 1 0 111.414 1.414l-4.828 4.829 4.828 4.828z"
-                  ></path>
-                  <path
-                    class="astronav-open-icon astronav-toggle"
-                    fill-rule="evenodd"
-                    d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-          </div> -->
-          <!-- Danh sách khi bung ra màn hình lớn -->
-          <!-- <nav
-            class="hidden w-full lg:flex astronav-items astronav-toggle lg:w-auto mt-2 lg:mt-0"
+          <!-- tag a chứa logo -->
+          <a href="#" class="header__logo">
+            <span>Astro</span><span>ship</span><span>Pro</span>
+          </a>
+
+          <!-- thẻ button ở dưới không cần chỉnh, để nguyên  -->
+          <button
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-dropdown"
+            aria-expanded="false"
           >
-            <ul class="flex flex-col lg:flex-row lg:gap-3">
-              <li class="relative z-50">
-                <menu>
-                  <button class="flex items-center lg:w-full">
-                    <span class="text-gray-600">Pages</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="3"
-                      stroke="currentColor"
-                      class="w-3 h-3 mt-0.5 group-open:rotate-180"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                      ></path>
-                    </svg>
-                  </button>
-                  <!-- dropdown -->
-                  <!-- aria-expanded: xác định phần tử đang mở hay không -->
-                  <!-- <div
-                    class="astronav-dropdown dropdown-toggle hidden"
-                    aria-expanded="false"
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <!-- Phần nội dung cho thanh nav  -->
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <!-- ul gốc  -->
+            <ul
+              class="flex flex-col p-4 text-sm text-gray-600 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0"
+            >
+              <!-- li 1  -->
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-indigo-600 md:p-0 md:w-auto"
+                >
+                  Pages
+                  <svg
+                    class="w-2 h-2 ms-1"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
                   >
-                    <div class="w-full lg:w-48 lg: absolute z-50">
-                      <div
-                        class="flex flex-col px-3 lg:py-2 lg:bg-white lg:shadow lg:rounded-sm lg:broder"
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-600 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 hover:text-indigo-600"
+                        >Features</a
                       >
-                        <a href="">Features</a>
-                        <a href="">Integration</a>
-                        <a href="">Blog Details</a>
-                        <a href="">404 Page</a>
-                      </div>
-                    </div>
-                  </div>
-                </menu>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 hover:text-indigo-600"
+                        >Integrations</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 hover:text-indigo-600"
+                        >Blog Details</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 hover:text-indigo-600"
+                        >404 Page</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </li>
+              <!-- li 2 -->
               <li>
-                <a href="/" class=""> Pricing </a>
+                <a
+                  href="#"
+                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Pricing
+                </a>
               </li>
+              <!-- li 3 -->
               <li>
-                <a href="/" class=""> About </a>
+                <a
+                  href="#"
+                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
               </li>
+              <!-- li 4  -->
               <li>
-                <a href="/"> Blogs </a>
+                <a
+                  href="#"
+                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Blog</a
+                >
               </li>
+              <!-- li 5 -->
               <li>
-                <a href="/"> Contact </a>
+                <a
+                  href="#"
+                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+              <!-- hidden ul -->
+              <ul class="md:hidden flex text-center gap-4 mt-2">
+                <li
+                  class="w-full bg-gray-100 rounded-full transition-all hover:bg-gray-200 hover:text-black"
+                >
+                  <a
+                    href="#"
+                    class="block py-2 px-3 rounded-full md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >Log in</a
+                  >
+                </li>
+                <li
+                  class="w-full bg-indigo-600 rounded-full transition-all hover:bg-indigo-800 text-white"
+                >
+                  <a
+                    href="#"
+                    class="block py-2 px-3 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >Try for Free</a
+                  >
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <!-- ul thứ 2  -->
+            <ul
+              class="flex flex-col items-center p-4 text-sm text-gray-600 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0"
+            >
+              <!-- li login  -->
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Log in</a
+                >
+              </li>
+              <!-- li button -->
+              <li class="header__button">
+                <a
+                  href="#"
+                  class="block py-2 px-4 bg-indigo-600 text-white rounded-full w-full transition-all md:hover:bg-indigo-800 move"
+                >
+                  Try for Free <i class="fa fa-angle-right"></i>
+                </a>
               </li>
             </ul>
-            <div class="flex lg:hidden items-center">
-              <a href="#" class="">Log in</a>
-              <a href="#" class="">Try for Free</a>
-            </div>
-          </nav>
+          </div>
         </div>
-      </div>
-    </header>  -->
-    <!-- ===================================****================================================== -->
-    <!-- HEADER -->
-    <header class="header">
-      
+      </nav>
     </header>
+
     <!-- BANNER -->
     <section class="banner overflow-x-clip">
-      <div class="container max-w-screen-xl mx-auto px-5 relative mt-24">
+      <div class="container max-w-screen-xl mx-auto px-5 relative mt-28">
         <div class="banner__flex">
           <!-- banner__text -->
           <div class="banner__contain lg:mt-20">
@@ -158,32 +239,19 @@
             <img src="../src/img/banner.png" alt="" class="img" />
           </div>
         </div>
+            <!-- Phần code svg -->
+        <div class="popular__starups">
+      <h3>Trusted by popular startups you know</h3>
+      <div class="popular__starups__flex">
+        <img src="./img/stripe.svg" alt="logo stripe" />
+        <img src="./img/hubspot.svg" alt="logo hubspot" />
+        <img src="./img/intercom.svg" alt="logo intercom" />
+        <img src="./img/asana.svg" alt="logo asana" />
       </div>
-    </section>
-    <!-- KNOW
-    <section class="know">
-      <div class="container max-w-screen-xl mx-auto px-5 mt-5">
-        <div>
-          <div class="know__text">
-          <h2 class="know1">Trusted by popular startups you know</h2>
-          </div>
-          <div class="know__title mt-5">
-          <div class="know__item">
-            <img src="../src/img/svgexport-3.png" alt="">
-          </div>
-          <div class="know__item">
-            <img src="../src/img/svgexport-4.png" alt="">
-          </div>
-          <div class="know__item">
-            <img src="../src/img/svgexport-5.png" alt="">
-          </div>
-          <div class="know__item">
-            <img src="../src/img/svgexport-6.png" alt="">
-          </div>
-          </div>
         </div>
       </div>
-    </section> -->
+    </section>
+
     <!-- TWO-COL FEATURES -->
     <section class="twofeatures">
       <!-- features__text -->
@@ -285,6 +353,345 @@
         </div>
       </div>
     </section>
+
+    <!-- CLIENT FEEDBACK -->
+    <section class="feedback">
+      <!-- feedback__title  -->
+      <div class="feedback__title">
+        <div class="container__astro">
+          <h1>Client <span>Testimonials</span></h1>
+          <p>
+            Astroship is trusted by the world's leading companies and brands.
+          </p>
+        </div>
+      </div>
+
+      <!-- feedback__content  -->
+      <div class="feedback__content">
+        <div class="feedback__carousel__1">
+          <div class="feedback__item">
+            <p>
+              Astroship has transformed the way we manage our projects. Its
+              well-designed interface and powerful features make it a must-have
+              tool for any startup. We've seen a great increase in our
+              productivity and collaboration.
+            </p>
+            <div class="client__info">
+              <img src="./img/astroship04.png" alt="John Doe CEO at TechCorp" />
+              <div class="client__name">
+                <h3>John Doe</h3>
+                <p>CEO at TechCorp</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__item">
+            <p>
+              As a marketing professional, I love using Astroship to streamline
+              our marketing campaigns. The automation features and data
+              analytics help us make data-driven decisions and optimize our
+              business strategies.
+            </p>
+            <div class="client__info">
+              <img
+                src="./img/astroship05.png"
+                alt="Jane Smith Marketing Manager at InnovateTech"
+              />
+              <div class="client__name">
+                <h3>Jane Smith</h3>
+                <p>Marketing Manager at InnovateTech</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__item">
+            <p>
+              Astroship has revolutionized the way we handle customer support.
+              The ticketing system and knowledge base have significantly reduced
+              response times, leading to happier customers. Thanks to this
+              incredible tool.
+            </p>
+            <div class="client__info">
+              <img
+                src="./img/astroship06.png"
+                alt="Mike Johnson CTO at CloudNine"
+              />
+              <div class="client__name">
+                <h3>Mike Johnson</h3>
+                <p>CTO at CloudNine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__item">
+            <p>
+              Astroship has simplified our employee management processes. From
+              onboarding to performance evaluations, everything is now
+              seamlessly organized in one place. It's made my job much more
+              manageable and enjoyable!
+            </p>
+            <div class="client__info">
+              <img
+                src="./img/astroship07.png"
+                alt="Emily Brown HR Manager at ConnectCo"
+              />
+              <div class="client__name">
+                <h3>Emily Brown</h3>
+                <p>HR Manager at ConnectCo</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__item">
+            <p>
+              Our sales team swears by Astroship's CRM capabilities. The lead
+              tracking and pipeline management tools have resulted in a
+              significant boost in sales. It's a versatile platform that has
+              truly optimized our sales processes.
+            </p>
+            <div class="client__info">
+              <img
+                src="./img/astroship08.png"
+                alt="David Lee Sales Director at Linkify"
+              />
+              <div class="client__name">
+                <h3>David Lee</h3>
+                <p>Sales Director at Linkify</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__item">
+            <p>
+              Astroship has been a lifesaver for our finance department. Its
+              robust accounting features and automated invoicing have saved us
+              countless hours of manual work. It's the perfect financial
+              companion for any business!
+            </p>
+            <div class="client__info">
+              <img
+                src="./img/astroship09.png"
+                alt="Sarah Martinez Finance Controller at MoneyMakers"
+              />
+              <div class="client__name">
+                <h3>Sarah Martinez</h3>
+                <p>Finance Controller at MoneyMakers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback__carousel__2">
+          <div class="feedback__item">
+            <p>
+              Astroship has transformed the way we manage our projects. Its
+              well-designed interface and powerful features make it a must-have
+              tool for any startup. We've seen a great increase in our
+              productivity and collaboration.
+            </p>
+            <div class="client__info">
+              <img src="./img/astroship04.png" alt="John Doe CEO at TechCorp" />
+              <div class="client__name">
+                <h3>John Doe</h3>
+                <p>CEO at TechCorp</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__item">
+            <p>
+              As a marketing professional, I love using Astroship to streamline
+              our marketing campaigns. The automation features and data
+              analytics help us make data-driven decisions and optimize our
+              business strategies.
+            </p>
+            <div class="client__info">
+              <img
+                src="./img/astroship05.png"
+                alt="Jane Smith Marketing Manager at InnovateTech"
+              />
+              <div class="client__name">
+                <h3>Jane Smith</h3>
+                <p>Marketing Manager at InnovateTech</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__item">
+            <p>
+              Astroship has revolutionized the way we handle customer support.
+              The ticketing system and knowledge base have significantly reduced
+              response times, leading to happier customers. Thanks to this
+              incredible tool.
+            </p>
+            <div class="client__info">
+              <img
+                src="./img/astroship06.png"
+                alt="Mike Johnson CTO at CloudNine"
+              />
+              <div class="client__name">
+                <h3>Mike Johnson</h3>
+                <p>CTO at CloudNine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__item">
+            <p>
+              Astroship has simplified our employee management processes. From
+              onboarding to performance evaluations, everything is now
+              seamlessly organized in one place. It's made my job much more
+              manageable and enjoyable!
+            </p>
+            <div class="client__info">
+              <img
+                src="./img/astroship07.png"
+                alt="Emily Brown HR Manager at ConnectCo"
+              />
+              <div class="client__name">
+                <h3>Emily Brown</h3>
+                <p>HR Manager at ConnectCo</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__item">
+            <p>
+              Our sales team swears by Astroship's CRM capabilities. The lead
+              tracking and pipeline management tools have resulted in a
+              significant boost in sales. It's a versatile platform that has
+              truly optimized our sales processes.
+            </p>
+            <div class="client__info">
+              <img
+                src="./img/astroship08.png"
+                alt="David Lee Sales Director at Linkify"
+              />
+              <div class="client__name">
+                <h3>David Lee</h3>
+                <p>Sales Director at Linkify</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__item">
+            <p>
+              Astroship has been a lifesaver for our finance department. Its
+              robust accounting features and automated invoicing have saved us
+              countless hours of manual work. It's the perfect financial
+              companion for any business!
+            </p>
+            <div class="client__info">
+              <img
+                src="./img/astroship09.png"
+                alt="Sarah Martinez Finance Controller at MoneyMakers"
+              />
+              <div class="client__name">
+                <h3>Sarah Martinez</h3>
+                <p>Finance Controller at MoneyMakers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLOGAN - Everything you need to start a website -->  
+    <section class="slogan">
+      <div class="container__astro">
+        <!-- slogan__title -->
+        <div class="slogan__title">
+          <h1>Everything you need to <span>start a website</span></h1>
+          <p>
+            Astro comes batteries included. It takes the best parts of
+            state-of-the-art tools and adds its own innovations.
+          </p>
+        </div>
+
+        <!-- slogan__grid -->
+        <div class="slogan__grid">
+          <div class="slogan_grid__1">
+            <!-- 1 -->
+            <div class="slogan__item">
+              <div class="slogan__picture height">
+                <img src="./img/astroship03.png" alt="Astroship" />
+              </div>
+              <div class="slogan__content">
+                <span>Astroship</span>
+                <h2>Responsive Template</h2>
+                <p>
+                  Astroship is a creative and modern mobile responsive website
+                  template that helps you create any kind of marketing websites
+                  or landing pages.
+                </p>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="slogan__item">
+              <div class="slogan__picture height">
+                <img src="./img/astroship03.png" alt="Creative" />
+              </div>
+              <div class="slogan__content">
+                <span class="color_1">Creative</span>
+                <h2>Next Level Template</h2>
+                <p>
+                  Astroship is a new kind of website template that integrates
+                  your favorite tools and workflows.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slogan_grid__2">
+            <!-- 1 -->
+            <div class="slogan__item">
+              <div class="slogan__picture">
+                <img src="./img/astroship10.png" alt="Template" />
+              </div>
+              <div class="slogan__content">
+                <span class="color_1">Template</span>
+                <h2>Modern Design</h2>
+                <p>
+                  Feeling old? Try this template and be a part of the modern
+                  design.
+                </p>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="slogan__item">
+              <div class="slogan__picture">
+                <img src="./img/astroship03.png" alt="Product" />
+              </div>
+              <div class="slogan__content">
+                <span>Product</span>
+                <h2>Highlight Features</h2>
+                <p>
+                  You can highlight your features in a trendy grid like this
+                  one.
+                </p>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="slogan__item">
+              <div class="slogan__picture">
+                <img src="./img/astroship11.svg" alt="Webhooks" />
+              </div>
+              <div class="slogan__content">
+                <span class="color_2">Webhooks</span>
+                <h2>100+ Integrations</h2>
+                <p>
+                  Astroship can be integrated with hundreds of tools using
+                  Zapier.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- MORE FEATURES -->
     <section class="morefeatures">
       <!-- morefeatures__text -->
@@ -307,7 +714,7 @@
           class="morefeatures__title grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-16"
         >
           <div class="morefeatures__item">
-            <img src="../src/img/svgexport-9.png" alt="" class="fea__img" />
+            <img src="../src/img/iconJs.svg" alt="" class="fea__img" />
             <h3 class="morefea__text1">Bring Your Own Framework</h3>
             <p class="morefea__text2">
               Build your site using React, Svelte, Vue, Preact, web components,
@@ -315,7 +722,7 @@
             </p>
           </div>
           <div class="morefeatures__item">
-            <img src="../src/img/svgexport-10.png" alt="" class="fea__img" />
+            <img src="../src/img/trophy.svg" alt="" class="fea__img" />
             <h3 class="morefea__text1">100% Static HTML, No JS</h3>
             <p class="morefea__text2">
               Need some JS? Astro can automatically hydrate interactive
@@ -323,7 +730,7 @@
             </p>
           </div>
           <div class="morefeatures__item">
-            <img src="../src/img/svgexport-11.png" alt="" class="fea__img" />
+            <img src="../src/img/box.svg" alt="" class="fea__img" />
             <h3 class="morefea__text1">On-Demand Components</h3>
             <p class="morefea__text2">
               Need some JS? Astro can automatically hydrate interactive
@@ -331,7 +738,7 @@
             </p>
           </div>
           <div class="morefeatures__item">
-            <img src="../src/img/svgexport-12.png" alt="" class="fea__img" />
+            <img src="../src/img/boxes.svg" alt="" class="fea__img" />
             <h3 class="morefea__text1">Broad Integration</h3>
             <p class="morefea__text2">
               Astro supports TypeScript, Scoped CSS, CSS Modules, Sass,
@@ -339,7 +746,7 @@
             </p>
           </div>
           <div class="morefeatures__item">
-            <img src="../src/img/svgexport-13.png" alt="" class="fea__img" />
+            <img src="../src/img/search.svg" alt="" class="fea__img" />
             <h3 class="morefea__text1">SEO Enabled</h3>
             <p class="morefea__text2">
               Automatic sitemaps, RSS feeds, pagination and collections take the
@@ -347,7 +754,7 @@
             </p>
           </div>
           <div class="morefeatures__item">
-            <img src="../src/img/svgexport-14.png" alt="" class="fea__img" />
+            <img src="../src/img/community.svg" alt="" class="fea__img" />
             <h3 class="morefea__text1">Community</h3>
             <p class="morefea__text2">
               Astro is an open source project powered by hundreds of
@@ -357,17 +764,79 @@
         </div>
       </div>
     </section>
+
+    <!-- TRIAL BANNER - Build faster websites  -->
+    <section class="trialBanner">
+      <h1>Build faster websites.</h1>
+      <p>
+        Pull content from anywhere and serve it fast with Astro's next-gen
+        island architecture.
+      </p>
+      <a href="#">Sign up for a 14-day Trial</a>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer>
+      <div class="container__astro">
+        <div class="footer__main">
+          <div class="footer__intro">
+            <div class="footer__logo">
+              <a href="#">
+                <span>Astro</span><span>ship</span><span>Pro</span>
+              </a>
+            </div>
+            <p>
+              Astroship Pro is a premium astro website template made for saas &
+              startups. Built with Astro and Tailwind CSS.
+            </p>
+            <div class="footer__icon">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="footer__item">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="#">For Startups</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Uptime Status</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>Copyright © 2024 Astroship. All rights reserved.</p>
+          <a href="#">Terms </a>
+          <span>.</span>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </footer>
+
     <!-- FLOWBITE -->
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-
-    <link rel="icon" type="image/svg+xml" href="./img/logoAstroship.png" />
-    <title>Astroship Pro Hoang Xuan</title>
-
-    <!-- MY CSS  -->
-    <link rel="stylesheet" href="./css/output.css" />
-  </head>
-  <body>
-    <h1 class="text-3xl text-yellow-300 font-bold underline">Hello world!</h1>
 
   </body>
 </html>
