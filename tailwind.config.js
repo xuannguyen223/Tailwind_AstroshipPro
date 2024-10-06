@@ -27,6 +27,9 @@ module.exports = {
       translate: {
         700: "700px",
       },
+      lineHeight: {
+        16: "64px",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],
