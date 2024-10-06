@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth Strategies for Scaling Your Business</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav
+          class="bg-white/80 backdrop-blur-lg fixed w-full z-50 border-gray-200 dark:bg-gray-900 dark:border-gray-700"
+        >
+          <div
+            class="max-w-screen-xl flex flex-wrap justify-between items-center mx-auto px-4 py-3"
+          >
+            <!-- tag a chứa logo -->
+            <a href="#" class="header__logo">
+              <span>Astro</span><span>ship</span><span>Pro</span>
+            </a>
+  
+            <!-- thẻ button ở dưới không cần chỉnh, để nguyên  -->
+            <button
+              data-collapse-toggle="navbar-dropdown"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-dropdown"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+            <!-- Phần nội dung cho thanh nav  -->
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+              <!-- ul gốc  -->
+              <ul
+                class="flex flex-col p-4 text-sm text-gray-600 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0"
+              >
+                <!-- li 1  -->
+                <li>
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar"
+                    class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-indigo-600 md:p-0 md:w-auto"
+                  >
+                    Pages
+                    <svg
+                      class="w-2 h-2 ms-1"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div
+                    id="dropdownNavbar"
+                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                  >
+                    <ul
+                      class="py-2 text-sm text-gray-600 dark:text-gray-400"
+                      aria-labelledby="dropdownLargeButton"
+                    >
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 hover:text-indigo-600"
+                          >Features</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 hover:text-indigo-600"
+                          >Integrations</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="./blog_12.html"
+                          class="block px-4 py-2 hover:bg-gray-100 hover:text-indigo-600"
+                          >Blog Details</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 hover:text-indigo-600"
+                          >404 Page</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- li 2 -->
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >Pricing
+                  </a>
+                </li>
+                <!-- li 3 -->
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >About</a
+                  >
+                </li>
+                <!-- li 4  -->
+                <li>
+                  <a
+                    href="./Blog.html"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >Blog</a
+                  >
+                </li>
+                <!-- li 5 -->
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >Contact</a
+                  >
+                </li>
+                <!-- hidden ul -->
+                <ul class="md:hidden flex text-center gap-4 mt-2">
+                  <li
+                    class="w-full bg-gray-100 rounded-full transition-all hover:bg-gray-200 hover:text-black"
+                  >
+                    <a
+                      href="#"
+                      class="block py-2 px-3 rounded-full md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                      >Log in</a
+                    >
+                  </li>
+                  <li
+                    class="w-full bg-indigo-600 rounded-full transition-all hover:bg-indigo-800 text-white"
+                  >
+                    <a
+                      href="#"
+                      class="block py-2 px-3 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                      >Try for Free</a
+                    >
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+              <!-- ul thứ 2  -->
+              <ul
+                class="flex flex-col items-center p-4 text-sm text-gray-600 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0"
+              >
+                <!-- li login  -->
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >Log in</a
+                  >
+                </li>
+                <!-- li button -->
+                <li class="header__button">
+                  <a
+                    href="#"
+                    class="block py-2 px-4 bg-indigo-600 text-white rounded-full w-full transition-all md:hover:bg-indigo-800 move"
+                  >
+                    Try for Free <i class="fa fa-angle-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <!-- Blog -->
+    <div class="container max-w-screen-xl px-5 mt-24 mx-auto">
+        <!-- blog__title -->
+        <div class="mx-auto max-w-3xl textt-center mt-14">
+            <div class="bl__title flex flex-col justify-center items-center">
+                <span class="title__1">Business Models</span>
+                <h1 class="title__2">The SaaS Subscription Model: Pros and Cons</h1>
+                <div class="blog__flex1">
+                    <span>Jennifer Brown</span>
+                    <span>•</span>
+                    <span>Tue Sep 27 2022
+                    </span>
+                    <span class="item__3 hidden md:block">•</span>
+                    <div class="blog__flex2">
+                        <span>#subscription model
+                        </span>
+                        <span>#SaaS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- blog__img -->
+        <div class="mx-auto max-w-3xl">
+            <img src="../img/blog__11.png" alt="" class="blog__1">
+        </div>
+        <!-- blog__content -->
+        <div class="blog__content">
+            <div class="max-w-3xl mx-auto">
+                <p class="content1"><b>Whatever you do, it’s always beneficial to have the right tools at your disposal. I love working remotely and am a big advocate of doing remote software development.</b></p>
+                <p class="content2">Therefore, I always strive to have the best equipment available to be as productive as possible. Writing posts like this constantly takes a lot of time. Luckily iVanky helped me out and sponsored this post so that I can concentrate on writing. I recently had the chance to test out one of their hottest products, a dual USB-C Docking Station that allows me to connect both my wide-screen monitors to my MacBook with Dual 4K@60Hz display connectivity. It also supports up to 96W laptop charging, which is awesome. If you are in a situation like me and want to upgrade your equipment, check out this and their other products! And now comes the article:</p>
+                <p class="content2">Whether you are new to programming or already an experienced developer. In this industry, learning new concepts and languages/frameworks is mandatory to keep up with the rapid changes. Take for example React - open-sourced by Facebook just a shy 4 years ago it already became the number one choice for JavaScript devs around the globe. But also Vue and Angular, of course, have their legitimate follower-base. And then there is Svelte, and universal frameworks like Next.js or Nuxt.js, and Gatsby, and Gridsome, and Quasar, and and and. If you want to shine as an expert JavaScript developer you should at least have some experience in different frameworks and libraries - besides doing your homework with good, old JS.</p>
+                <p class="content2">To help you become successfull, I have collected 9 different projects, each with a distinct topic and a different JavaScript framework or library as a tech stack that you can build and add to your portfolio. Remember, nothing helps you more than actually building stuff so go ahead, sharpen your mind and make this happen!</p>
+                <h2 class="content3">Dictum integer fusce ac ridiculus</h2>
+                <p class="content2">Lorem ipsum dolor sit amet consectetur adipiscing elit euismod rutrum, consequat fringilla ultricies nullam curae mollis semper conubia viverra, orci aenean dapibus pharetra nec tortor tellus cubilia. Ullamcorper mi lectus eu malesuada tempor massa praesent magna mattis posuere, lobortis vulputate ut duis magnis parturient habitant nibh id tristique.</p>
+                <h3 class="content4">Mattis malesuada vestibulum quis</h3>
+                <p class="content2">Nam phasellus suscipit facilisis libero diam posuere, cursus massa vehicula neque imperdiet tincidunt dui egestas lacinia mollis aliquet orci, nisl curabitur dapibus litora dis cum nostra montes ligula praesent. Facilisi aliquam convallis molestie tempor blandit ultricies bibendum parturient cubilia quam, porttitor morbi torquent tempus taciti nec faucibus elementum phasellus, quis inceptos vestibulum gravida augue potenti eget nunc maecenas. Tempor facilisis ligula volutpat habitant consequat inceptos orci per potenti blandit platea, mus sapien eget vel libero vestibulum augue cubilia ut ultrices fringilla lectus, imperdiet pellentesque cum ridiculus convallis sollicitudin nisl interdum semper felis.</p>
+                <h2 class="content3">Sodales hendrerit malesuada et vestibulum
+                </h2>
+                <ul role="list" class="marker:text-gray-400 list-disc pl-5 space-y-3 text-slate-500 content5">
+                    <li>Luctus euismod pretium nisi et, est dui enim.</li>
+                    <li>Curae eget inceptos malesuada, fermentum class.</li>
+                    <li>Porttitor vestibulum aliquam porta feugiat velit, potenti eu placerat.</li>
+                    <li>Ligula lacus tempus ac porta, vel litora.
+                    </li>
+                </ul>
+                <p class="content2">Orci volutpat augue viverra scelerisque dictumst ut condimentum vivamus, accumsan cum sem sollicitudin aliquet vehicula porta pretium placerat, malesuada euismod primis cubilia rutrum tempus parturient. Urna mauris in nibh morbi hendrerit vulputate condimentum, iaculis consequat porttitor dui dis euismod eros, arcu elementum venenatis varius lectus nisi. Nibh arcu ultrices semper morbi quam aptent quisque porta posuere iaculis, vestibulum cum vitae primis varius natoque conubia eu. Placerat sociis sagittis sociosqu morbi purus lobortis convallis</p>
+            </div>
+        </div>
+        <!-- blog__button -->
+        <div class="blog__btn">
+            <a href="../blog/Blog.html" class="blog__button"> <- Back To Blog </a>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="mt-5">
+      <div class="container__astro mt-4">
+        <div class="footer__main">
+          <div class="footer__intro">
+            <div class="footer__logo">
+              <a href="#">
+                <span>Astro</span><span>ship</span><span>Pro</span>
+              </a>
+            </div>
+            <p>
+              Astroship Pro is a premium astro website template made for saas &
+              startups. Built with Astro and Tailwind CSS.
+            </p>
+            <div class="footer__icon">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="footer__item">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="#">For Startups</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Uptime Status</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>Copyright © 2024 Astroship. All rights reserved.</p>
+          <a href="#">Terms </a>
+          <span>.</span>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
