@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Power of Data Analytics in SaaS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav
+        class="bg-white/80 backdrop-blur-lg fixed w-full z-50 border-gray-200 dark:bg-gray-900 dark:border-gray-700"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap justify-between items-center mx-auto px-4 py-3"
+        >
+          <!-- tag a chứa logo -->
+          <a href="#" class="header__logo">
+            <span>Astro</span><span>ship</span><span>Pro</span>
+          </a>
+
+          <!-- thẻ button ở dưới không cần chỉnh, để nguyên  -->
+          <button
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-dropdown"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <!-- Phần nội dung cho thanh nav  -->
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <!-- ul gốc  -->
+            <ul
+              class="flex flex-col p-4 text-sm text-gray-600 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0"
+            >
+              <!-- li 1  -->
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-indigo-600 md:p-0 md:w-auto"
+                >
+                  Pages
+                  <svg
+                    class="w-2 h-2 ms-1"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-600 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 hover:text-indigo-600"
+                        >Features</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 hover:text-indigo-600"
+                        >Integrations</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./blog_12.html"
+                        class="block px-4 py-2 hover:bg-gray-100 hover:text-indigo-600"
+                        >Blog Details</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 hover:text-indigo-600"
+                        >404 Page</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- li 2 -->
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Pricing
+                </a>
+              </li>
+              <!-- li 3 -->
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <!-- li 4  -->
+              <li>
+                <a
+                  href="./Blog.html"
+                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Blog</a
+                >
+              </li>
+              <!-- li 5 -->
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-indigo-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+              <!-- hidden ul -->
+              <ul class="md:hidden flex text-center gap-4 mt-2">
+                <li
+                  class="w-full bg-gray-100 rounded-full transition-all hover:bg-gray-200 hover:text-black"
+                >
+                  <a
+                    href="#"
+                    class="block py-2 px-3 rounded-full md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >Log in</a
+                  >
+                </li>
+                <li
+                  class="w-full bg-indigo-600 rounded-full transition-all hover:bg-indigo-800 text-white"
+                >
+                  <a
+                    href="#"
+                    class="block py-2 px-3 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >Try for Free</a
+                  >
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <!-- ul thứ 2  -->
+            <ul
+              class="flex flex-col items-center p-4 text-sm text-gray-600 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0"
+            >
+              <!-- li login  -->
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Log in</a
+                >
+              </li>
+              <!-- li button -->
+              <li class="header__button">
+                <a
+                  href="#"
+                  class="block py-2 px-4 bg-indigo-600 text-white rounded-full w-full transition-all md:hover:bg-indigo-800 move"
+                >
+                  Try for Free <i class="fa fa-angle-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Blog -->
+    <div class="container max-w-screen-xl px-5 mt-24 mx-auto">
+      <!-- blog__title -->
+      <div class="mx-auto max-w-3xl text-center mt-14">
+        <div class="bl__title flex flex-col justify-center t">
+          <span class="title__1">Analytics</span>
+          <h1 class="title__2">The Power of Data Analytics in SaaS</h1>
+          <div class="blog__flex1">
+            <span class="item__3">John Smith</span>
+            <span class="item__3">• </span>
+            <span class="item__3">Tue Nov 08 2022 </span>
+            <span class="item__3 hidden md:block">•</span>
+            <div class="blog__flex2">
+              <span class="item__3">#data</span>
+              <span class="item__3">#analytics </span>
+              <span>#SaaS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- blog__img -->
+      <div class="mx-auto max-w-3xl mt-10">
+        <img src="./img/blog__8.png" alt="" class="blog__img" />
+      </div>
+      <!-- blog__content -->
+      <div class="blog__content">
+        <div class="max-w-3xl mx-auto">
+          <p class="content2">In the competitive world of SaaS, data is king. Every click, interaction, and transaction generates valuable information that, when harnessed correctly, can propel your SaaS business to new heights.
+          </p>
+          <p class="content2">Data analytics tools and techniques have become essential for SaaS startups. They provide insights into user behavior, product performance, and market trends that can inform critical business decisions.
+          </p>
+          <h2 class="content3">Benefits of Data Analytics</h2>
+          <ul
+            role="list"
+            class="marker:text-gray-400 list-disc pl-5 space-y-3 text-slate-500 content5"
+          >
+            <li><b>Improved Decision-Making: </b>Data-driven insights enable smarter, more informed decisions.</li>
+            <li><b>Enhanced User Experience: </b>Tailor your product to meet user needs with precision.</li>
+            <li><b>Revenue Optimization: </b>Identify opportunities to increase revenue and reduce costs.</li>
+            <li><b>Competitive Advantage: </b>Stay ahead of competitors by leveraging data effectively.</li>
+          </ul>
+          <h2 class="content3">Conclusion</h2>
+          <p class="content2">In conclusion, data analytics is not just a buzzword; it’s a powerful tool that can supercharge your SaaS startup’s growth. By investing in analytics, you’re investing in your future success.</p>
+        </div>
+      </div>
+      <!-- blog__button -->
+      <div class="blog__btn gap-2">
+        <a href="./Blog2.html" class="blog__button">
+            <i class="fa fa-arrow-left"></i>
+            <span class="">Back To Blog</span></a>
+    </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="mt-5">
+      <div class="container__astro mt-4">
+        <div class="footer__main">
+          <div class="footer__intro">
+            <div class="footer__logo">
+              <a href="#">
+                <span>Astro</span><span>ship</span><span>Pro</span>
+              </a>
+            </div>
+            <p>
+              Astroship Pro is a premium astro website template made for saas &
+              startups. Built with Astro and Tailwind CSS.
+            </p>
+            <div class="footer__icon">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="footer__item">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="#">For Startups</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Uptime Status</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>Copyright © 2024 Astroship. All rights reserved.</p>
+          <a href="#">Terms </a>
+          <span>.</span>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
