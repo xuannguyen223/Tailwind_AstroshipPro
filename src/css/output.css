@@ -1142,6 +1142,10 @@ input:checked + .toggle-bg {
   margin-right: auto;
 }
 
+.-mr-44 {
+  margin-right: -11rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1176,6 +1180,10 @@ input:checked + .toggle-bg {
 
 .mt-24 {
   margin-top: 6rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
 }
 
 .mt-4 {
@@ -1457,6 +1465,10 @@ input:checked + .toggle-bg {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-clip {
+  overflow-x: clip;
 }
 
 .rounded {
@@ -4270,6 +4282,10 @@ tr {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
